@@ -1,14 +1,16 @@
 import React from "react";
-
-
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import About from "./pages/About";
 
 const App = () => {
-    return(
-        <div>
-            <h1>Hello Fidelys </h1>
-        </div>
-    )
-
-}
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<About />}></Route>
+        <Route path="/" element={<About />}></Route>
+      </Routes>
+    </BrowserRouter>
+  );
+};
 
 export default App;
